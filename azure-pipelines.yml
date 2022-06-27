@@ -5,7 +5,7 @@
 
 trigger:
 - main
-- Test_Github_repo_
+- Test*
 
 pool:
   vmImage: ubuntu-latest
