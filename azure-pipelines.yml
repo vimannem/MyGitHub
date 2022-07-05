@@ -8,7 +8,7 @@ trigger:
 - Test*
 
 schedules:
-- cron: "48 18 * * *"
+- cron: "30 13 * * *"
   displayName: test schedule build 
   branches:
     include:
