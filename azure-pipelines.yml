@@ -7,6 +7,14 @@ trigger:
 - main
 - Test*
 
+schedules:
+- cron: "48 18 * * *"
+  displayName: test schedule build 
+  branches:
+    include:
+    - main
+    - Test*
+
 pool:
   vmImage: ubuntu-latest
 
