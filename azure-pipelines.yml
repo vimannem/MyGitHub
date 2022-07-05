@@ -16,12 +16,12 @@ trigger:
    # - Test_Github_repo_
 
 schedules:
-  - cron: "30 20 * * *"
-    displayName: Daily my test
-    branches:
-      include:
-        - Test_Github_repo_
-    always: true
+- cron: "42 20 * * *"
+  displayName: Daily my test
+  branches:
+   include:
+   - Test_Github_repo_
+  always: true
 
 pool:
   vmImage: ubuntu-latest
