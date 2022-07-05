@@ -7,13 +7,21 @@ trigger:
 - main
 - Test*
 
+#schedules:
+#- cron: "30 13 * * *"
+ # displayName: test schedule build 
+  #branches:
+  #  include:
+   # - main
+   # - Test_Github_repo_
+
 schedules:
-- cron: "30 13 * * *"
-  displayName: test schedule build 
-  branches:
-    include:
-    - main
-    - Test*
+  - cron: "30 20 * * *"
+    displayName: Daily my test
+    branches:
+      include:
+        - Test_Github_repo_
+    always: true
 
 pool:
   vmImage: ubuntu-latest
