@@ -6,10 +6,10 @@
 trigger:
 #- main
 - Test*
-
+    
 schedules:
-- cron: "34 19 * * *"
-  displayName: test schedule build 
+- cron: "55 19 * * *"
+  displayName: test schedule
   branches:
     include:
     - main
