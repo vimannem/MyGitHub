@@ -4,11 +4,11 @@
 # https://aka.ms/yaml
 
 trigger:
-#- main
+- main
 - Test*
     
 schedules:
-- cron: "55 19 * * *"
+- cron: "06 20 * * *"
   displayName: test schedule
   branches:
     include:
