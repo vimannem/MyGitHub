@@ -5,14 +5,14 @@
 
 trigger:
 #- main
-- Test*
+#- Test*
     
 schedules:
-  - cron: "43 15 * * *"
+  - cron: "53 15 * * *"
     displayName: testing build
     branches:
       include:
-        - main
+        - Test_Github_repo_
     always: true
 
 pool:
