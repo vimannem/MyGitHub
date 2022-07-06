@@ -8,11 +8,11 @@ trigger:
 - Test*
     
 schedules:
-  - cron: "13 15 * * *"
+  - cron: "43 15 * * *"
     displayName: testing build
     branches:
       include:
-        - Test_Github_repo_
+        - main
     always: true
 
 pool:
