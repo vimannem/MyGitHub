@@ -16,7 +16,7 @@ trigger:
    # - Test_Github_repo_
 
 schedules:
-- cron: "50 20 * * *"
+- cron: "59 16 * * *"
   displayName: Daily my test
   branches:
     include:
