@@ -8,12 +8,11 @@ trigger:
 - Test*
     
 schedules:
-- cron: "06 20 * * *"
+- cron: "40 20 * * *"
   displayName: test schedule
   branches:
     include:
     - main
-    - Test_Github_repo_
 
 pool:
   vmImage: ubuntu-latest
