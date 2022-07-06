@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+#- main
 - Test*
 
 #schedules:
@@ -16,10 +16,11 @@ trigger:
    # - Test_Github_repo_
 
 schedules:
-- cron: "59 16 * * *"
+- cron: "18 19 * * *"
   displayName: Daily my test
   branches:
     include:
+    #- main
     - Test_Github_repo_
   always: true
 
