@@ -19,8 +19,8 @@ schedules:
 - cron: "50 20 * * *"
   displayName: Daily my test
   branches:
-   include:
-   - main
+    include:
+    - Test_Github_repo_
   always: true
 
 pool:
