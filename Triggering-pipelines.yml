@@ -18,4 +18,4 @@ resources:
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 
 steps:
-- bash: echo "app-ci runs after security-lib-ci completes"
+- bash: echo "ToBeTriggered runs after TriggeringPipeline completes"
