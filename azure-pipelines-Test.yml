@@ -10,11 +10,12 @@
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+resources:
+  pipelines:
+  - pipeline: TriggeringPipeline # Name of the pipeline resource.
+    source: ToBeTriggered # The name of the pipeline referenced by this pipeline resource.
+    project: VinayFirst # Required only if the source pipeline is in another project
+    trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+steps:
+- bash: echo "app-ci runs after security-lib-ci completes"
