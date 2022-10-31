@@ -12,8 +12,8 @@ pool:
 
 resources:
   pipelines:
-  - pipeline: ToBeTriggered # Name of the pipeline resource.
-    source: ToBeTriggered # The name of the pipeline referenced by this pipeline resource.
+  - pipeline: TriggeringPipeline # Name of the pipeline resource.
+    source: TriggeringPipeline # The name of the pipeline referenced by this pipeline resource.
     project: VinayFirst # Required only if the source pipeline is in another project
     trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
 
