@@ -8,11 +8,12 @@ trigger: none
 #- Test*
     
 schedules:
-  - cron: "00 15 * * *"
+  - cron: "00 15 04 * *"
     displayName: testing build
     branches:
       include:
         - develop
+        - release-2*
     always: false
 
 pool:
