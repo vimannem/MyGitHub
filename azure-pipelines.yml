@@ -8,12 +8,12 @@ trigger: none
 #- Test*
     
 schedules:
-  - cron: "53 15 * * *"
+  - cron: "00 15 * * *"
     displayName: testing build
     branches:
       include:
-        - Test_Github_repo_
-    always: true
+        - develop
+    always: false
 
 pool:
   vmImage: ubuntu-latest
