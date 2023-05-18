@@ -7,14 +7,14 @@ trigger: none
 #- main
 #- Test*
     
-schedules:
-  - cron: "00 15 04 * *"
-    displayName: testing build
-    branches:
-      include:
-        - develop
-        - release-2*
-    always: false
+# schedules:
+#   - cron: "00 15 04 * *"
+#     displayName: testing build
+#     branches:
+#       include:
+#         - develop
+#         - release-2*
+#     always: false
 
 pool:
   vmImage: ubuntu-latest
