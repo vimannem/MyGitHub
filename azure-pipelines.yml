@@ -3,17 +3,18 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger: none
-#- main
-#- Test*
-    
-schedules:
-  - cron: "53 15 * * *"
-    displayName: testing build
-    branches:
-      include:
-        - Test_Github_repo_
-    always: true
+trigger:
+  branches:
+    include:
+    - '*'
+    exclude:
+    - dev
+    - live
+    - master
+pr:
+  branches:
+    include:
+    - dev
 
 pool:
   vmImage: ubuntu-latest
