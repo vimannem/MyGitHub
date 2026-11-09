@@ -7,13 +7,13 @@ trigger: none
 #- main
 #- Test*
     
-schedules:
-  - cron: "53 15 * * *"
-    displayName: testing build
-    branches:
-      include:
-        - Test_Github_repo_
-    always: true
+# schedules:
+#   - cron: "53 15 * * *"
+#     displayName: testing build
+#     branches:
+#       include:
+#         - Test_Github_repo_
+#     always: true
 
 pool:
   vmImage: ubuntu-latest
